@@ -27,7 +27,7 @@ namespace DatabaseProject
         {
             //const string constr = @"Data Source=DESKTOP-SIPFLUH\DBSML3;Initial Catalog=dbproj;Integrated Security=SSPI";
             //SqlConnection con = new SqlConnection("Data Source=DESKTOP-SIPFLUH\\DBSML3;Initial Catalog=cmblogin;Integrated Security=True");
-            SqlConnection con = new SqlConnection("Data Source = ROHAN-PC\\SPARTA; Initial Catalog = cmblogin ;Integrated Security = True");
+            SqlConnection con = new SqlConnection("Data Source = ROHAN-PC\\ROHAN-PC; Initial Catalog = cmblogin ;Integrated Security = True");
             //SqlConnection con = new SqlConnection(constr);
 
             SqlCommand cmd = new SqlCommand("select * from login where username = '" + txtuser.Text + "' and password = '" + txtpass.Text + "'", con);
